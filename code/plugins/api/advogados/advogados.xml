@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0.0" type="plugin" group="api" method="upgrade">
+    <name>PLG_API_ADVOGADOS</name>
+    <version>1.0</version>
+    <creationDate>Dez 2021</creationDate>
+    <author>Intercode</author>
+    <authorEmail>rogerio.brito@intercode.com.br</authorEmail>
+    <authorUrl>http://www.intercode.com.br</authorUrl>
+    <copyright>Intercode. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <description>PLG_API_ADVOGADOS_DESCRIPTION</description>
+    
+    <files>
+        <filename plugin="advogados">advogados.php</filename>
+        <filename >advogados/advogados.php</filename>
+        <filename >advogados/advogado.php</filename>
+        <folder>advogados</folder>
+        <folder>helper</folder>
+    </files>
+    
+    <config>
+		<fields name="params">
+			<fieldset name="basic">
+
+				<field
+					name="count"
+					type="text"
+					default="50"
+					label="Count"
+					description="Number of lawers to show in api" />
+
+				
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>
